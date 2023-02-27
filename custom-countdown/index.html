@@ -1,1 +1,53 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Countdown</title>
+    <link rel="icon" type="image/png" href="./letter-y1.png">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <!-- Video Background -->
+    <video class="video-background" loop muted autoplay>
+        <source src="video-background.mp4">
+    </video>
+    <div class="video-overlay"></div>
+    <!-- container -->
+    <div class="container">
+        <div class="input-container" id="input-container">
+            <h1>Create a Custom Countdown!</h1>
+            <form class="form" id="countdownForm">
+                <div class="title-section">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" placeholder="What are you counting down to?">
+                </div>
+                <div class="date-section">
+                    <label for="date-picker">Selete a Date</label>
+                    <input type="date" id="date-picker" class="date-picker">
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <!-- Countdown -->
+        <div class="countdown" id="countdown" hidden>
+            <h1 id="countdown-title"></h1>
+            <ul>
+                <li><span></span>Days</li>
+                <li><span></span>Hours</li>
+                <li><span></span>Minutes</li>
+                <li><span></span>Seconds</li>
+            </ul>                
+            <button id="countdown-button">Reset</button>
+        </div>
+        <!-- Complete -->
+        <div class="complete" id="complete" hidden>
+            <h1 id="animation-demo" class="animated vanishOut">Countdown Complete!</h1>
+            <h2 id="complete-info"></h2>
+            <button id="complete-button">New Countdown</button>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
