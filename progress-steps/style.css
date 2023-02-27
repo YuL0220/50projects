@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+  text-align: center;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  width: 350px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.progress-container::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  background-color: #e0e0e0;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+}
+.progress {
+  z-index: -1;
+  position: absolute;
+  background-color:aqua;
+  width: 0% ;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  transition: 0.4s ease;
+}
+
+.circle.active {
+  border: 3px solid aqua;
+}
+
+.circle {
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #e0e0e0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  background-color: aqua;
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:disabled {
+  background-color: #e0e0e0;
+  cursor: un;
+}
+
+.btn:focus{
+  outline: not-allowed;
+}
