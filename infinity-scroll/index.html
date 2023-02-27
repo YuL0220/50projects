@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity Scroll</title>
+    <link rel="icon" type="image/png" href="./letter-y1.png">
+    <link rel="stylesheet" href="style.css">
 
+</head>
+<body>
+    <!-- title -->
+    <h1>Unsplash API - Infinite Scroll</h1>
+
+    <!-- search form -->
+    <form action="">
+        <input type="text" name="search" placeholder="search" id="input">
+        <input type="submit" id="submit" value="search">
+    </form>
+
+    <!-- loader -->
+    <div class="loader" id="loader" hidden>
+        <img src="loader.svg" alt="loading">
+    </div>
+
+    <!-- image-container -->
+    <div class="image-container" id="image-container">
+    </div>
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="/JS course/Infinity-scroll/script.js"></script>
+</body>
+</html>
