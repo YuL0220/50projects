@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #161626; ;
+}
+
+.container {
+    position: relative;
+    margin: 50px;
+    display: flex;
+    z-index: 1;
+}
+
+.container .card {
+    position: relative;
+    width: 280px;
+    height: 400px;
+    background-color: rgba(225,225,225,0.1
+    );
+    margin: 30px;
+    border-radius: 15px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.4);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1.5px solid rgba(255,255,255,0.2);
+    border-left: 1.5px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(5px);
+}
+
+.container .card .content {
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .card:hover .content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.container .card .content h1 {
+    position: absolute;
+    top: -80px;
+    right: 55px;
+    font-size: 128px;
+    color: rgba(255,255,255,0.05);
+}
+
+.container .card .content h2 {
+    font-size: 28px;
+    color: white;
+}
+
+.container .card .content p {
+    font-size: 16px;
+    color: white;
+    font-weight: 300;
+    margin: 10px 0 15px 0;
+}
+
+.container .card .content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2) ;
+
+}
+
+.container .card .content a:active {
+    transform: scale(0.98);
+}
